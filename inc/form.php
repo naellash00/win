@@ -1,8 +1,8 @@
 <?php 
 
-$firstName = $_POST['firstName'];
-$lastName = $_POST['lastName'];
-$emai = $_POST['email'];
+ $firstName = $_POST['firstName'];
+ $lastName = $_POST['lastName'];
+ $email = $_POST['email'];
 
 $errors = [
     'firstNameError' => '',
@@ -11,8 +11,6 @@ $errors = [
 ];
 
 if(isset($_POST['submit'])){
-    
-    
 
     if(empty($firstName)){
         $errors['firstNameError'] = 'please enter the first name';
@@ -45,7 +43,6 @@ if(isset($_POST['submit'])){
    
        
     }
- 
      
 }
 
